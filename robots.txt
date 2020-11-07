@@ -1,1 +1,7 @@
-
+User-agent: *
+Disallow: C*
+Disallow:fav*
+Disallow:n*
+Allow: /
+Allow: 07.11.2020
+Allow: 08.11.2020
