@@ -1,3 +1,4 @@
+Sitemap: https://allnet.kamakepar.ru/sitemap.xml
 User-agent: *
 Disallow: C*
 Disallow:fav*
