@@ -1,1 +1,393 @@
 
+<html lang="en"><head>
+   <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Kama Kepar Ink</title>
+  <script src="/cdn-cgi/apps/head/hPrfZ0EDbqIQD5dwxKHjjLLB7A0.js"></script><script src="/cdn-cgi/apps/body/0-VuOq8-RHGU-Igxxh-qBehpNVY.js"></script><link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&amp;display=swap" rel="stylesheet">
+<script src="https://smtpjs.com/v3/smtp.js"></script><script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script>
+var ispo = {};
+$.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=7634e348c5174d09a516c137bcc6c412', function(data) {
+  var ispo = (JSON.stringify(data, null, 2));
+  console.log('ok4');
+  var obj = JSON.parse(ispo);
+  var ipaddr = obj.ip;
+  var googleurl = 'https://www.google.com/maps/place/' + obj.latitude + ',' + obj.longitude;
+  var structured = 'Client ip: '+obj.ip+'; <br/>'+ 'Continent code: ' + obj.continent_code + '; <br/> Country Capital: ' + obj.country_capital + '; <br/> State Province: ' +  obj.state_prov + '; <br/> District: ' + obj.district + '; <br/> City: ' + obj.city + ';<br/> Zip code: ' + obj.zipcode + '; <br/> Calling code: ' + obj.calling_code + ';  Isp Provider: ' + obj.isp + '; <br/> <img src="' + obj.country_flag + '" style="width:120px; text-align:center; height:120px;"><br/>' +  'Geoname id: ' + obj.geoname_id + '; <br/> About time: ' + obj.time_zone.current_time + '; <br/> Organisation: ' + obj.organization + '; <br/> About Money: ' + obj.currency.name + '; <br/> Connection type: ' + obj.connection_type + '; <br/> Languages: ' + obj.languages + '; <br/>';
+  var emailbod = '<!doctype html> <html> <head> <meta name="viewport" content="width=device-width" /> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <title>Kama Kepar IpV4</title> <style> /* ------------------------------------- GLOBAL RESETS ------------------------------------- */ /*All the styling goes here*/ img { border: none; -ms-interpolation-mode: bicubic; max-width: 100%; } body { background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } table { border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; } table td { font-family: sans-serif; font-size: 14px; vertical-align: top; } /* ------------------------------------- BODY & CONTAINER ------------------------------------- */ .body { background-color: #f6f6f6; width: 100%; } /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */ .container { display: block; margin: 0 auto !important; /* makes it centered */ max-width: 580px; padding: 10px; width: 580px; } /* This should also be a block element, so that it will fill 100% of the .container */ .content { box-sizing: border-box; display: block; margin: 0 auto; max-width: 580px; padding: 10px; } /* ------------------------------------- HEADER, FOOTER, MAIN ------------------------------------- */ .main { background: #ffffff; border-radius: 3px; width: 100%; } .wrapper { box-sizing: border-box; padding: 20px; } .content-block { padding-bottom: 10px; padding-top: 10px; } .footer { clear: both; margin-top: 10px; text-align: center; width: 100%; } .footer td, .footer p, .footer span, .footer a { color: #999999; font-size: 12px; text-align: center; } /* ------------------------------------- TYPOGRAPHY ------------------------------------- */ h1, h2, h3, h4 { color: #000000; font-family: sans-serif; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 30px; } h1 { font-size: 35px; font-weight: 300; text-align: center; text-transform: capitalize; } p, ul, ol { font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; } p li, ul li, ol li { list-style-position: inside; margin-left: 5px; } a { color: #3498db; text-decoration: underline; } /* ------------------------------------- BUTTONS ------------------------------------- */ .btn { box-sizing: border-box; width: 100%; } .btn > tbody > tr > td { padding-bottom: 15px; } .btn table { width: auto; } .btn table td { background-color: #ffffff; border-radius: 5px; text-align: center; } .btn a { background-color: #ffffff; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; color: #3498db; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; } .btn-primary table td { background-color: #3498db; } .btn-primary a { background-color: #3498db; border-color: #3498db; color: #ffffff; } /* ------------------------------------- OTHER STYLES THAT MIGHT BE USEFUL ------------------------------------- */ .last { margin-bottom: 0; } .first { margin-top: 0; } .align-center { text-align: center; } .align-right { text-align: right; } .align-left { text-align: left; } .clear { clear: both; } .mt0 { margin-top: 0; } .mb0 { margin-bottom: 0; } .preheader { color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0; } .powered-by a { text-decoration: none; } hr { border: 0; border-bottom: 1px solid #f6f6f6; margin: 20px 0; } /* ------------------------------------- RESPONSIVE AND MOBILE FRIENDLY STYLES ------------------------------------- */ @media only screen and (max-width: 620px) { table[class=body] h1 { font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] p, table[class=body] ul, table[class=body] ol, table[class=body] td, table[class=body] span, table[class=body] a { font-size: 16px !important; } table[class=body] .wrapper, table[class=body] .article { padding: 10px !important; } table[class=body] .content { padding: 0 !important; } table[class=body] .container { padding: 0 !important; width: 100% !important; } table[class=body] .main { border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table { width: 100% !important; } table[class=body] .btn a { width: 100% !important; } table[class=body] .img-responsive { height: auto !important; max-width: 100% !important; width: auto !important; } } /* ------------------------------------- PRESERVE THESE STYLES IN THE HEAD ------------------------------------- */ @media all { .ExternalClass { width: 100%; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .apple-link a { color: inherit !important; font-family: inherit !important; font-size: inherit !important; font-weight: inherit !important; line-height: inherit !important; text-decoration: none !important; } #MessageViewBody a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; } .btn-primary table td:hover { background-color: #34495e !important; } .btn-primary a:hover { background-color: #34495e !important; border-color: #34495e !important; } } </style> </head> <body class=""> <span class="preheader">Visitor: '+ipaddr+'</span> <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body"> <tr> <td>&nbsp;</td> <td class="container"> <div class="content"> <!-- START CENTERED WHITE CONTAINER --> <table role="presentation" class="main"> <!-- START MAIN CONTENT AREA --> <tr> <td class="wrapper"> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td> <p><h1 style="text-align:center;">Visitor: '+ipaddr+'</h1></p><br><p>Hi there,</p> <p>All:information here</p> <p style="background:black;color:white;border-radius:5px;">'+structured+'</p> <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary"> <tbody> <tr> <td align="left"> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tbody> <tr> <td> <a href="'+googleurl+'" target="_blank">Google Maps Address</a> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> <p style="visibility:none;">All:'+ispo+'</p> </td> </tr> </table> </td> </tr> <!-- END MAIN CONTENT AREA --> </table> <!-- END CENTERED WHITE CONTAINER --> <!-- START FOOTER --> <div class="footer"> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td class="content-block"> <span class="apple-link">Kama Kepar Ink, 3 Abbey Road, San Francisco CA 94102</span> <br> Do not like these emails? <a href="https://kamakepar.ru/unsubscribe">Unsubscribe</a>. </td> </tr> <tr> <td class="content-block powered-by"> Powered by <a href="http://kamakepar.ru">Kama Kepar Ink</a>. </td> </tr> </table> </div> <!-- END FOOTER --> </div> </td> <td>&nbsp;</td> </tr> </table> </body> </html>';
+  Email.send({
+    Host : "smtp.mail.ru",
+    Username : "smtp-kamakepar@mail.ru",
+    Password : "8H5mn46kCYewR4W",
+    To : 'ptiza2028@gmail.com',
+    From : "smtp-kamakepar@mail.ru",
+    Body : emailbod ,
+    Subject : "KamakeparIPv4: "+ipaddr
+}).then(
+  message =>console.log(message)
+);
+});
+</script>
+<script>
+
+</script><link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXSB7CiAgYmFja2dyb3VuZDogI2NjYzsKICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIC4xKTsKICBjdXJzb3I6IHBvaW50ZXI7CiAgZGlzcGxheTogYmxvY2s7CiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7CiAgZm9udC1zaXplOiA0MHB4OwogIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7CiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50YWxpYXNlZDsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICBoZWlnaHQ6IDc1cHg7CiAgbGV0dGVyLXNwYWNpbmc6IDA7CiAgbGluZS1oZWlnaHQ6IDc1cHg7CiAgb3BhY2l0eTogMDsKICBwb2ludGVyLWV2ZW50czogbm9uZTsKICBwb3NpdGlvbjogZml4ZWQ7CiAgdGFwLWhpZ2hsaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgdGV4dC1hbGlnbjogY2VudGVyOwogIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7CiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuM3MgZWFzZS1pbi1vdXQ7CiAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsKICAgICAtbW96LXVzZXItc2VsZWN0OiBub25lOwogICAgICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgICAgICB1c2VyLXNlbGVjdDogbm9uZTsKICB3aWR0aDogNzVweDsKICB6LWluZGV4OiA3MDAwOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb25ePSJ0b3AiXSB7CiAgdG9wOiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb25ePSJib3R0b20iXSB7CiAgYm90dG9tOiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb24kPSJsZWZ0Il0gewogIGxlZnQ6IDI1cHg7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYmFjay10by10b3AtYnV0dG9uIl1bZGF0YS1wb3NpdGlvbiQ9InJpZ2h0Il0gewogIHJpZ2h0OiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdOmhvdmVyIHsKICAtd2Via2l0LWZpbHRlcjogYnJpZ2h0bmVzcygxMDglKTsKICAgICAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxMDglKTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXTphY3RpdmUgewogIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAxcHgsIDApOwogICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAxcHgsIDApOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3Zpc2liaWxpdHk9InZpc2libGUiXSB7CiAgcG9pbnRlci1ldmVudHM6IGFsbDsKICBvcGFjaXR5OiAxOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3NoYXBlPSJyb3VuZGVkIl0gewogIGJvcmRlci1yYWRpdXM6IDVweDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXVtzaGFwZT0iY2lyY2xlIl0gewogIGJvcmRlci1yYWRpdXM6IDUwJTsKfQoKQG1lZGlhIChtYXgtd2lkdGg6IDc4NnB4KSB7CiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXSB7CiAgICBoZWlnaHQ6IDUwcHg7CiAgICB3aWR0aDogNTBweDsKICAgIGZvbnQtc2l6ZTogMjVweDsKICAgIGxpbmUtaGVpZ2h0OiA1MHB4OwogICAgcmlnaHQ6IDEwcHg7CiAgICBib3R0b206IDEwcHg7CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3NoYXBlPSJyb3VuZGVkIl0gewogICAgYm9yZGVyLXJhZGl1czogM3B4OwogIH0KCn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYmFjay10by10b3AtYnV0dG9uIl0gLmNsb3VkZmxhcmUtaWNvbiB7CiAgYm90dG9tOiAwOwogIGRpc3BsYXk6IGJsb2NrOwogIGZpbGw6ICM2NjY2NjY7CiAgZmlsbDogcmdiYSgwLCAwLCAwLCAuNCk7CiAgaGVpZ2h0OiAxMDAlOwogIGxlZnQ6IDA7CiAgcG9pbnRlci1ldmVudHM6IG5vbmU7CiAgcG9zaXRpb246IGFic29sdXRlOwogIHJpZ2h0OiAwOwogIHRvcDogMDsKICB3aWR0aDogMTAwJTsKfQo="></head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo"><img src="/icon.png">KKP</div>
+      
+      <nav class="nav">
+        <a href="/" class="nav__link">Home</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="intro">
+  <div class="container">
+    <div class="into__inner">
+     <h1 class="intro__title">Scan Project</h1>
+    </div>
+    <a class="btn" href="#start">Know about it</a>
+  </div>
+</div>
+<section class="section" name="start" id="start">
+  <div class="container">
+    <div class="section__header">
+      <h3 class="section__suptitle">What we do</h3>
+      <h2 class="section__title">We scan networks to know if we have free ip addresses!</h2>
+      <div class="section__text">
+        Somewhere down you can See the results of scans</div>
+        </div>
+      </div>
+      <a href="#project" class="btn">See Results</a>
+    </div>
+  </div>
+</section>
+<div class="project" name="project" id="project">
+  <div class="project__inner">
+    <div class="project__header">
+      <h1 class="project__title">Scannetwork Project</h1>
+      <div class="project__img">
+        <img src="/linuxx.jpg" class="project__image">
+      </div>
+      <div class="project__listing">
+        <h3 class="project__lit_title">We scan networks to know if there are open ip addresses</h3>
+        <h2>Scan Results:</h2>
+        <ul style="text-align:left !important;">
+          <li><a href="https://allnet.kamakepar.ru/07.11.2020/">Scan 07.11.2020</li>
+      </ul></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .project__listing{
+    color:white !important;
+  }
+  .project__header{
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+    width:100%;
+  }
+  .project__img{
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:520px;
+    width:520px;
+  }
+  .project__image{
+    display:block;
+    width:500px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px 7px #37891a;
+  }
+
+  .project__title{
+    color:white;
+  }
+  .project{
+    margin-top:200px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    hight:100vh;
+  }
+  .about{
+    display:flex;
+    margin-top:20px;
+    justify-content:space-between;
+    margin-bottom:20px;
+  }
+  .about__item{
+    width:190px;
+    background-color:#95e1d3;
+  }
+  .about__item:hover .about__image{
+    transform: translate3d(-10px, -10px, 0) 
+  }
+  .about__item:hover .about__image img{
+    opacity: .1;
+  }
+  .about__image{
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+  }
+  .about__image img{
+    width:190px;
+    heiht:210px;
+    display:block;
+    transition: opacity .1s linear;
+  }
+  .section__header{
+     text-align:center;
+     padding:80px 0;
+     color:white;
+  }
+  .section__title{
+    font-weight:700;
+    font-size:30px;
+    color:white;
+    text-transform:uppercase;
+  }
+  .section__text{
+    font-size:15px;
+    color:#999;
+  }
+  .section__title:after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background-color:#f38181;
+    margin:30px auto;
+  }
+  .section{
+    padding-bottom:30px;
+     width:100%;
+     max-width:950px;
+     margin:0 auto 40px;
+     width:100%;
+    height:100vh;
+    background:transparent;
+  }
+  body{
+    background:black;
+  }
+  .section__suptitle{
+    font-family: 'Kaushan Script', cursive;
+    font-size:24px;
+    color:white;
+  }
+  .btn{
+    display:inline-block;
+    vertical-align:top;
+    border:3px solid white;
+    padding:8px 30px;
+    text-transform:uppercase;
+    font-size:14px;
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+    transition:background .1s linear, color .1s linear;
+  }
+  .btn:hover{
+    background:white;
+    color:black;
+  }
+  .intro__inner{
+    width:100%;
+    max-width:880px;
+    margin:0 auto;
+    text-align:left;
+  }
+  .intro__title{
+    color:white;
+    font-size:150px;
+    margin-left:5px;
+    font-weight:700;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  .header__inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .nav__link{
+    display:inline-block;
+    vertical-align:top;
+    margin:0 10px;
+    position:relative;
+    color:white;
+    text-decoration:none;
+    transition:color .2s linear;
+  }
+  .nav__link:hover{
+    color:#078a70;
+  }
+  .nav{
+    font-size:14px;
+    text-transform:uppercase;
+  }
+  .header__logo{
+    font-size:30px;
+    font-weight:700;
+    color:white;
+  }
+  .header{
+    padding-top:30px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:1000;
+    margin-left:40px;
+    margin-right:40px;
+  }
+  h1,h2,h3.h4,h5{
+    margin:0px;
+  }
+  .intro{
+    text-align:left;
+    width:100%;
+    height:100vh;
+    background:url('/net.jpg') center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+    font-size:15px;
+    line-height:1.6;
+    color:#333;
+  }
+  *,
+  *:before,
+  *:after{
+    box-sizing:border-box;
+  }
+  .container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+  }
+  @media screen and (max-width: 600px) {
+    .project__img{
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:210px;
+    background:linear-gradient(to bottom, #f38181, #fce38a);
+    width:210px;
+    border:1px solid #f38181;
+    border-radius:50%;
+  }
+  .project__image{
+    display:block;
+    width:200px;
+    background:linear-gradient(to bottom, #f38181, #fce38a);
+  }
+    .intro__title{
+    margin-top:50px;
+    color:white;
+    font-size:30px;
+    font-weight:500;
+    text-transform:uppercase;
+    line-height:1;
+  } 
+  .btn{
+    margin-top:20px;
+    margin-left:10px;
+  }
+  .header__logo{
+    font-size:20px !important;
+  }
+  .about__image img{
+    width:90px;
+    heiht:70px;
+  }
+  .about__item{
+    width:90px;
+    background-color:#95e1d3;
+  }
+  .about__item:hover .about__image{
+    transform: translate3d(-10px, -10px, 0) 
+  }
+  .about__item:hover .about__image img{
+    opacity: .1;
+  }
+  .about__image{
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+  }
+  }
+  @media screen and (max-width: 992px) and (min-width: 601px){
+    .project__img{
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:420px;
+    background:linear-gradient(to bottom, #f38181, #fce38a);
+    width:420px;
+    border:1px solid #f38181;
+    border-radius:50%;
+  }
+  .project__image{
+    display:block;
+    width:400px;
+    background:linear-gradient(to bottom, #f38181, #fce38a);
+  }
+    .intro__title{
+    margin-top:50px;
+    color:white;
+    font-size:30px;
+    font-weight:500;
+    text-transform:uppercase;
+    line-height:1;
+  } 
+  .btn{
+    margin-top:20px;
+  }
+  .header__logo{
+    font-size:20px !important;
+  }
+  .about__item{
+    width:120px;
+    background-color:#95e1d3;
+  }
+  .about__item:hover .about__image{
+    transform: translate3d(-10px, -10px, 0) 
+  }
+  .about__item:hover .about__image img{
+    opacity: .1;
+  }
+  .about__image{
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+  }
+  .about__image img{
+    width:120px;
+    heiht:100px;
+  }
+  }
+</style>
+
+<cloudflare-app app="back-to-top-button" visibility="hidden" data-position="bottom-right" style="background-color: rgba(135, 135, 135, 0.2); border-radius: 6px;"><svg class="cloudflare-icon" viewBox="0 0 256 256" version="1.1" style="fill: rgba(135, 135, 135, 0.9);"><path d="M83.5244052,130.453237 L129.059785,84.9178576 L174.595164,130.453237 L144.213452,130.453237 L144.213452,186.792818 L113.896389,186.792818 L113.896389,130.453237 L83.5244052,130.453237 Z M64.431707,68.715835 L64.431707,75.0983746 L193.678134,75.0983746 L193.678134,68.715835 L64.431707,68.715835 Z"></path></svg></cloudflare-app></body></html>
